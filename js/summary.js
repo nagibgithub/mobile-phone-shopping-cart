@@ -8,7 +8,7 @@ dynamic or static
 users: 
 --> array of objects
 --> object with property users
----> object with a property called data
+--> object with a property called data
 
 nested object
 

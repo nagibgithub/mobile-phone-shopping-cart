@@ -18,58 +18,64 @@
 
 
     <main class="container">
-        <section class="">
-            <div class="input-group mb-3">
-                <input id="search-field" type="text" class="form-control" placeholder="search your phone">
-                <span class="input-group-text btn btn-primary" id="btn-search">Search</span>
-            </div>
-        </section>
-        <!-- loader -->
-        <section id="loader" class="d-none">
-            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
-                <div class="spinner-border  text-success" role="status">
-                    <span class="visually-hidden">Loading...</span>
+
+        <div class="col">
+            <!-- search-field -->
+            <section class="">
+                <div class="input-group mb-3">
+                    <input id="search-field" type="text" class="form-control" placeholder="search your phone">
+                    <span class="input-group-text btn btn-primary" id="btn-search">Search</span>
                 </div>
-            </div>
-        </section>
-        <!-- display Search Result -->
-        <section>
-            <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
+            </section>
 
-            </div>
-            <div id="no-found-message" class="mt-4 d-none">
-                <h3 class="text-warning">No Phone Found. Please try a new search</h3>
-            </div>
-            <div id="show-all" class="text-center d-none">
-                <div id="btn-show-all" class="btn btn-primary">Show All</div>
-            </div>
-        </section>
+            <!-- loader -->
+            <section id="loader" class="d-none">
+                <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                    <div class="spinner-border  text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </section>
 
-        <!-- modal contents -->
-        <section>
-            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div id="phone-details" class="modal-body">
-                            
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- display Search Result -->
+            <section>
+                <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
+
+                </div>
+                <div id="no-found-message" class="mt-4 d-none">
+                    <h3 class="text-warning">No Phone Found. Please try a new search</h3>
+                </div>
+                <div id="show-all" class="text-center d-none">
+                    <div id="btn-show-all" class="btn btn-primary">Show All</div>
+                </div>
+            </section>
+
+            <!-- modal contents -->
+            <section>
+                <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div id="phone-details" class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
+        <aside class="col border rounded m-3">
 
+        </aside>
 
-
-
-
-        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
